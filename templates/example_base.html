@@ -1,0 +1,23 @@
+<!--An simple base template you can use as reference-->
+
+{% load static %} <!-- Lets you add CSS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %} | Lafayette Empowerment Center</title>
+    <link rel="stylesheet" href={% static "example_base.css" %}> <!-- The href resolves to static/example_base.css -->
+    <!--If you're using a CDN for e.g. bootstrap, you can just link it in normally without the "static" stuff-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+<!--Stuff here will go before the content block of child templates. Use for e.g. navbars-->
+<a href="/example">Example</a> <a href="https://google.com">Some other link</a>
+<br>
+{% block content %}{% endblock %}
+<!--Stuff here will go after the content block of child templates. Use for e.g. footers-->
+
+<!--You can add more blocks as well, these are just examples-->
+</body>
+</html>

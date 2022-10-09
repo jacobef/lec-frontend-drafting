@@ -1,0 +1,8 @@
+venv/
+.idea/
+.vscode/
+db.sqlite3
+**/migrations/**
+!__init__.py
+.DS_Store
+*.pyc

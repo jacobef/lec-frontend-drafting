@@ -23,8 +23,12 @@ def example_view(request):
 def index(request):
     return render(request, "index.html")
 
+def login(request):
+    return render(request, "login.html")
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('example/', example_view),
-    path('', index)
+    path('', index),
+    path('login/', login),
 ]

@@ -20,7 +20,16 @@ from django.urls import path
 def example_view(request):
     return render(request, "example_page.html")
 
+
+def login_view(request):
+    return render(request, "login.html")
+
+def parent_view(request):
+    return render(request, "parent_home.html")
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('example/', example_view)
+    path('example/', example_view),
+    path('login/', login_view),
+    path('parent/', parent_view)
 ]

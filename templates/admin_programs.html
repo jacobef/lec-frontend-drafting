@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Programs</title>
+    <link rel="stylesheet" type="text/css" href="/static/nav_bar_style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="relative flex w-screen h-screen max-w-screen flex-col">
+        <div class="relative flex p-5 bg-blue-900">
+            <ul class="nav relative space-x-8 flex flex-row text-white">
+                <!-- one nav bar but depending on what user you are you will see different links -->
+                <!-- links will determine who sees what -->
+                <!-- admin view -->
+                <li><a class="font-semibold" href="#">Programs</a></li>
+                <li><a href="#">Students</a></li>
+                <li><a href="#">Community Contacts</a></li>
+                <li><a href="#">Donors</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#">Admin Requests</a></li>
+            </ul>
+        </div>
+        <div class="relative flex flex-row h-full w-full">
+            <div class="relative flex h-full w-1/5 justify-center bg-gray-300">
+                <div class="relative flex w-5/6 my-7">
+                    <ul class="relative flex flex-col w-full space-y-5 overflow-visible">
+                        <li class="relative flex truncate whitespace-nowrap hover:text-lg">
+                            <a class="relative flex font-semibold">This is a selected program element</a>
+                        </li>
+                        <li class="relative flex truncate whitespace-nowrap hover:text-lg">
+                            <a class="relative flex">This is a non-selected program element</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="relative flex h-full w-4/5  bg-white">
+                <div class="relative flex m-7 flex-col">
+                    <h1 class="relative flex text-2xl font-semibold">Description</h1>
+                    <p class="relative flex">
+                        Lorem ipsum text something
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

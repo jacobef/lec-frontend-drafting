@@ -1,13 +1,34 @@
+:root {
+  --background-color: #f8f8f8;
+  --primary-color: #0060A6;
+  --secondary-color: #AB2B6E;
+  --hyperlink: #4E87DD;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
 ul {
   list-style-type: none;
   margin:0;
   padding: 0;
   overflow: hidden;
-  background-color: darkblue;
+  background-color: var(--primary-color);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100vw;
 }
 
 li {
   float: left;
+  height: 100%;
 }
 
 li a {
@@ -17,8 +38,13 @@ li a {
   padding: 15px 20px;
   text-decoration: none;
   font-family: Arial;
+  background-color: var(--primary-color);
 }
 
 li a:hover {
-  background-color: midnightblue;
+  background-color: var(--hyperlink);
+}
+
+.inactive{
+  display: none;
 }

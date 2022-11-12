@@ -23,8 +23,44 @@ def example_view(request):
 def index(request):
     return render(request, "index.html")
 
+def programs(request):
+    return render(request, "programs.html")
+
+def students(request):
+    return render(request, "students.html")
+
+def community(request):
+    return render(request, "community.html")
+
+def donors(request):
+    return render(request, "donors.html")
+
+def messages(request):
+    return render(request, "messages.html")
+
+def requests(request):
+    return render(request, "requests.html")
+
+def calender(request):
+    return render(request, "calender.html")
+
+def announcements(request):
+    return render(request, "announcements.html")
+
+def children(request):
+    return render(request, "children.html")
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('example/', example_view),
-    path('', index)
+    path('programs/', programs),
+    path('students/', students),
+    path('community/', community),
+    path('donors/', donors),
+    path('messages/', messages),
+    path('requests/', requests),
+    path('calender/', calender),
+    path('announcements/', announcements),
+    path('children/', children),
+    path('', index),
 ]

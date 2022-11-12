@@ -3,6 +3,7 @@
   --primary-color: #0060A6;
   --secondary-color: #AB2B6E;
   --hyperlink: #4E87DD;
+  --selected: #5593f0;
 }
 
 *{
@@ -43,6 +44,10 @@ li a {
 
 li a:hover {
   background-color: var(--hyperlink);
+}
+
+li a:active{
+  background-color: var(--selected);
 }
 
 .inactive{

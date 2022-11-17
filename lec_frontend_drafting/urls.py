@@ -17,9 +17,6 @@ from django.contrib import admin
 from django.shortcuts import render
 from django.urls import path
 
-def example_view(request):
-    return render(request, "example_page.html")
-
 def index(request):
     return render(request, "index.html")
 
@@ -50,9 +47,12 @@ def announcements(request):
 def children(request):
     return render(request, "children.html")
 
+def login(request):
+    return render(request, "login.html")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('login/', login),
     path('programs/', programs),
     path('students/', students),
     path('community/', community),

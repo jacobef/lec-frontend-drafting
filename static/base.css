@@ -19,10 +19,11 @@
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 body {
-    background-color: purple;
+    background-color: var(--background-color);
 }
 
 .login-wrapper {

@@ -6,15 +6,6 @@
   --selected: #5593f0;
 }
 
-*{
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  background-color: var(--background-color);
-}
-
 ul {
   list-style-type: none;
   margin:0;
@@ -79,16 +70,6 @@ button{
   -10px -10px 35px rgba(0,0,0,0.125); 
 } 
 
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #adadad;
-  outline: 1px solid #adadad;
-  border-radius: 0 0 15px 15px;
-}
-
 .notif-element{
   display: flex;
   flex-direction: column;
@@ -107,18 +88,3 @@ button{
 .notif-element:active{
   background-color: #dbdbdb;
 }
-
-/*
-position: absolute;
-top: 48px;
-right: -15px;
-user-select: none;
-background: #fff;
-border: 1px solid #c7d8e2;
-width: 350px;
-height: auto;
-display: none;
-border-radius: 3px;
-box-shadow: 10px 10px 35px rgba(0,0,0,0.125),
-            -10px -10px 35px rgba(0,0,0,0.125);
-*/

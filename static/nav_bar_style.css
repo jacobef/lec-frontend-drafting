@@ -57,3 +57,42 @@ li a:active{
 button{
   background-color: gray;
 }
+
+#notif-btn{
+  position:absolute;
+  padding: 0;
+  margin: 0;
+  right: 190px;
+  top: 2px;
+}
+
+#notif-body{
+  top: 54px;
+  right: 10px;
+  width: 400px;
+  max-height: 300px;
+  position:absolute;
+  overflow-y: auto;
+  background-color: red;
+}
+
+.notif-element{
+  background-color: yellow;
+  padding: 10px;
+  margin-bottom: 5px;
+  height: 100px;
+}
+/*
+position: absolute;
+top: 48px;
+right: -15px;
+user-select: none;
+background: #fff;
+border: 1px solid #c7d8e2;
+width: 350px;
+height: auto;
+display: none;
+border-radius: 3px;
+box-shadow: 10px 10px 35px rgba(0,0,0,0.125),
+            -10px -10px 35px rgba(0,0,0,0.125);
+*/

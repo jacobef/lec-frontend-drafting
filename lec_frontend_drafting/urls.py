@@ -24,7 +24,7 @@ def programs(request):
     return render(request, "programs.html")
 
 def students(request):
-    return render(request, "students.html")
+    return render(request, "student_roster.html")
 
 def community(request):
     return render(request, "community.html")
@@ -50,6 +50,9 @@ def children(request):
 def login(request):
     return render(request, "login.html")
 
+def parent_view(request):
+    return render(request, "parent_home.html")
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', login),
@@ -63,4 +66,5 @@ urlpatterns = [
     path('announcements/', announcements),
     path('children/', children),
     path('', index),
+    path('parent/', parent_view)
 ]

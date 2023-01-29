@@ -2,12 +2,20 @@
 {% load static %}
 
 {% block content %}
-<script src="https://cdn.tailwindcss.com"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-<div class="bg-[#F0F0F0] flex justify-center">
+<body class="bg-[#F0F0F0] flex justify-center">
+    {% load static %}
 
     <div class="mt-[5vh] flex flex-col items-center">
-        <img src="{% static "LEC_logo.png"%}" class="w-[30vw]">
+        <img src="{% static "LEC_logo.png" %}" class="w-[30vw]">
 
         <div class="bg-white w-full px-[10%] pt-[10%] pb-[5%] rounded-2xl">
 
@@ -27,4 +35,6 @@
             </div>
         </div>
     </div>
+</body>
+</html>
 {% endblock content %}

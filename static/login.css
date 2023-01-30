@@ -3,17 +3,31 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: lightgrey;
+    flex-direction: column;
+}
+
+.lec-logo{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: gray;
+    padding: 50px;
+    height: 5%;
+    border-radius: 30px;
 }
 
 .login-wrapper {
-    width: 40vw;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     background-color: white;
     padding: 50px;
-    height: 80vh;
+    height: 40%;
     border-radius: 30px;
 }
 
@@ -32,15 +46,24 @@ body {
     width: 80%;
 }
 
-.lec-logo{
-    width: 80%;
-    height: 10%;
-    background-color: gray;
+back:link {
+  color: red;
+}
+
+/* visited link */
+back:visited {
+  color: green;
+}
+
+/* mouse over link */
+back:hover {
+  color: hotpink;
+}
+
+/* selected link */
+back:active {
+  color: blue;
 }
 
 
 
-.login-wrapper .back {
-    align-self: flex-start;
-    color: var(--hyperlink);
-}

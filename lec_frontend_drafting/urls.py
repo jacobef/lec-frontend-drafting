@@ -50,6 +50,12 @@ def children(request):
 def login(request):
     return render(request, "login.html")
 
+def create_account(request):
+    return render(request, "create_account.html")
+
+def login_or_create(request):
+    return render(request, "login_or_create.html")
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', login),
@@ -62,5 +68,7 @@ urlpatterns = [
     path('calender/', calender),
     path('announcements/', announcements),
     path('children/', children),
+    path('create_account/', create_account),
+    path('login_or_create/', login_or_create),
     path('', index),
 ]

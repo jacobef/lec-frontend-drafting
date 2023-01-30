@@ -53,6 +53,12 @@ def login(request):
 def parent_view(request):
     return render(request, "parent_home.html")
 
+def login_view(request):
+    return render(request, "login.html")
+
+def create_view(request):
+    return render(request, "createAccount.html")
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', login),
@@ -66,5 +72,6 @@ urlpatterns = [
     path('announcements/', announcements),
     path('children/', children),
     path('', index),
-    path('parent/', parent_view)
+    path('parent/', parent_view),
+    path('createAccount/', create_view)
 ]

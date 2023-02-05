@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NavBar</title>
+    <link rel="stylesheet" type="text/css" href="/static/nav_bar_style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <ul id="nav">
+        <!-- one nav bar but depending on what user you are you will see different links -->
+        <!-- links will determine who sees what -->
+        <!-- admin view -->
+        <li class="admin-item"><a href="/programs">Programs</a></li>
+        <li class="admin-item"><a href="/students">Students</a></li>
+        <li class="admin-item"><a href="/community">Community Contacts</a></li>
+        <li class="admin-item"><a href="/donors">Donors</a></li>
+        <li class="admin-item"><a href="/messages">Messages</a></li>
+        <li class="admin-item"><a href="/requests">Admin Requests</a></li>
+        <!-- parent view -->
+        <li class="parent-item"><a href="/">Home</a></li>
+        <li class="parent-item"><a href="/calender">Calender</a></li>
+        <li class="parent-item"><a href="/announcements">Announcements</a></li>
+        <li class="parent-item"><a href="/children">Manage Children</a></li>
+        <li class="parent-item"><a href="/programs">Programs</a></li> <!-- this link may be the only one shared by admin and parents -->
+
+        <button type="button" id="switch-perm" class="inline-block px-6 py-2.5 bg-gray-800 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out">Change user</a>
+    </ul>
+    <script type="text/javascript" src="/static/nav_bar.js"></script>
+</body>
+</html>

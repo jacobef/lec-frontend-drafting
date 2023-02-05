@@ -1,0 +1,59 @@
+:root {
+  --background-color: #f8f8f8;
+  --primary-color: #0060A6;
+  --secondary-color: #AB2B6E;
+  --hyperlink: #4E87DD;
+  --selected: #5593f0;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+ul {
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--primary-color);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+li {
+  float: left;
+  height: 100%;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-family: Arial;
+  background-color: var(--primary-color);
+}
+
+li a:hover {
+  background-color: var(--hyperlink);
+}
+
+li a:active{
+  background-color: var(--selected);
+}
+
+.inactive{
+  display: none;
+}
+
+button{
+  background-color: gray;
+}

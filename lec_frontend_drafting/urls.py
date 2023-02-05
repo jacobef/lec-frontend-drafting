@@ -17,8 +17,44 @@ from django.contrib import admin
 from django.shortcuts import render
 from django.urls import path
 
-def example_view(request):
-    return render(request, "example_page.html")
+def index(request):
+    return render(request, "index.html")
+
+def programs(request):
+    return render(request, "programs.html")
+
+def students(request):
+    return render(request, "students.html")
+
+def community(request):
+    return render(request, "community.html")
+
+def donors(request):
+    return render(request, "donors.html")
+
+def messages(request):
+    return render(request, "messages.html")
+
+def requests(request):
+    return render(request, "requests.html")
+
+def calender(request):
+    return render(request, "calender.html")
+
+def announcements(request):
+    return render(request, "announcements.html")
+
+def children(request):
+    return render(request, "children.html")
+
+def login(request):
+    return render(request, "login.html")
+
+def create_account(request):
+    return render(request, "create_account.html")
+
+def login_or_create(request):
+    return render(request, "login_or_create.html")
 
 
 def login_view(request):
@@ -27,9 +63,25 @@ def login_view(request):
 def parent_view(request):
     return render(request, "parent_home.html")
 
+
+def login_view(request):
+    return render(request, "login.html")
+
+def parent_view(request):
+    return render(request, "parent_home.html")
+
+def standard_parent(request):
+    return render(request, "standard_parent.html")
+
+def edit_profile(request):
+    return render(request, "edit_profile.html")
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('example/', example_view),
-    path('login/', login_view),
-    path('parent/', parent_view)
+    path('parent/', parent_view),
+    path('standard_parent/', standard_parent),
+    path('programs/', programs),
+    path('create_account/', create_account),
+    path('edit_profile/', edit_profile),
+    path('login/', login)
 ]

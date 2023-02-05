@@ -1,5 +1,5 @@
 
-{% extends "example_base.html" %}
+{% extends "base.html" %}
 {% block title %}Example Page{% endblock %}
 {% block content %}
 
@@ -21,25 +21,24 @@
                  <p class="text-6xl text-black">user!</p>
              </div>
 
-            <a href="#" class="bg-[#F3F3F3] min-w-[40%] rounded-md border border-gray-200 h-full">
-                <div class = " p-3 rounded-t-lg  bg-[#0066B0]">
-                    <p class=" text-2xl   text-white">Action needed</p>
-                </div>
-
-
-                <div class = "p-2">
-                    <div class = "group mb-2 p-2 rounded-md  bg-[#E1E1E1] hover:bg-[#cacaca]">
-                        <p class="group-hover:text-blue text-sm text-black">name</p>
-                        <p class="text-xl text-black">action</p>
-                    </div>
-
-                    <div class = "mb-2 p-2 rounded-md  bg-[#E1E1E1] hover:bg-[#cacaca]">
-                        <p class="group-hover:text-red text-sm text-black">name</p>
-                        <p class="text-xl text-black">action</p>
-                    </div>
-
-                </div>
-            </a>
+            
+            <table class="relative mt-5 flex rounded-lg h-[75%] w-full bg-gray-200 flex-col items-center space-y-3">
+                <thead class="relative rounded-t-lg flex flex-row bg-[#0066B0] h-16 text-white w-full items-center pr-20">
+                    <tr class="flex-row relative flex items-center justify-around w-full space-x-5 whitespace-nowrap">
+                        <th class="relative flex font-normal text-2xl">Action Needed</th>
+                        
+                    </tr>
+                </thead>
+                <tbody class="relative flex w-full flex-col items-center">
+                    <tr class="relative flex w-[97%] flex-row items-center justify-around space-x-10 whitespace-nowrap h-16 rounded-3xl bg-gray-300">
+                        <td class="relative flex">
+                            Action
+                        </td>
+                        
+                     
+                    </tr>
+                </tbody>
+            </table>
 
         </div>
 
@@ -60,25 +59,26 @@
 
 
 
-            <a href="#" class=" rounded-md border border-gray-200 bg-[#F3F3F3] h-full">
-            <div class = " p-3 rounded-t-lg  bg-[#0066B0] ">
-                <p class=" text-2xl   text-white">My Children</p>
-            </div>
+        <table class="relative mt-5 flex rounded-lg h-[75%] w-full bg-gray-200 flex-col items-center space-y-3">
+            <thead class="relative rounded-t-lg flex flex-row bg-[#0066B0] h-16 text-white w-full items-center pr-20">
+                <tr class="flex-row relative flex items-center justify-around w-full space-x-5 whitespace-nowrap">
+                    <th class="relative flex font-normal text-2xl">Children</th>
+                    
+                </tr>
+            </thead>
+            <tbody class="relative flex w-full flex-col items-center">
+                <tr class="relative flex w-[97%] flex-row items-center justify-around space-x-10 whitespace-nowrap h-16 rounded-3xl bg-gray-300">
+                    <td class="relative flex">
+                        Child
+                    </td>
+                    <td class="relative flex">
+                        John
+                    </td>
+                 
+                </tr>
+            </tbody>
+        </table>
 
-
-            <div class = "p-2">
-                <div class = "group mb-2 p-2 rounded-md  bg-[#E1E1E1] hover:bg-[#cacaca] h-16">
-
-                    <p class="mt-2 text-2xl text-black">child </p>
-                </div>
-
-                <div class = "mb-2 p-2 rounded-md  bg-[#E1E1E1] hover:bg-[#cacaca] h-16">
-
-                    <p class="mt-2 text-2xl text-black">child</p>
-                </div>
-
-            </div>
-        </a>
 
         </div>
 

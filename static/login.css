@@ -8,19 +8,30 @@ body {
 }
 
 .lec-logo{
-    width: 40vw;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: gray;
+    background-color: lightgrey;
     padding: 50px;
     height: 5%;
     border-radius: 30px;
 }
 
+img{
+    width: 125%;
+    height: 400%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: lightgrey;
+    border-radius: 30px;
+}
+
 .login-wrapper {
-    width: 40%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -36,28 +47,31 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 30vw;
-    gap: 20px;
+    width: 100%;
+    gap: 5px;
+    font-family: Arial;
 }
 
 .login form {
     display: flex;
     flex-direction: column;
     width: 80%;
+    border-radius: 50px;
+    gap: 10px;
 }
 
 back:link {
-  color: red;
+  color: blue;
 }
 
 /* visited link */
 back:visited {
-  color: green;
+  color: purple;
 }
 
 /* mouse over link */
 back:hover {
-  color: hotpink;
+  color: lightblue;
 }
 
 /* selected link */
@@ -65,5 +79,8 @@ back:active {
   color: blue;
 }
 
+button{
+  background-color: white;
+}
 
 

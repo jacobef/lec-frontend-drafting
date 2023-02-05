@@ -50,6 +50,9 @@ def children(request):
 def login(request):
     return render(request, "login.html")
 
+def view_program(request):
+    return render(request, "view_program.html")
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', login),
@@ -62,5 +65,6 @@ urlpatterns = [
     path('calender/', calender),
     path('announcements/', announcements),
     path('children/', children),
+    path('programs/view_program', view_program),
     path('', index),
 ]

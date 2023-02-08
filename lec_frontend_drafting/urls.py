@@ -23,8 +23,11 @@ def index(request):
 def programs(request):
     return render(request, "programs.html")
 
+def programs_outdated(request):
+    return render(request, "programs_possibly_outdated.html")
+
 def students(request):
-    return render(request, "students.html")
+    return render(request, "student_roster.html")
 
 def community(request):
     return render(request, "community.html")
@@ -50,11 +53,17 @@ def children(request):
 def login(request):
     return render(request, "login.html")
 
-def create_account(request):
-    return render(request, "create_account.html")
+def login2(request):
+    return render(request, "login2.html")
 
 def login_or_create(request):
     return render(request, "login_or_create.html")
+
+def parent_view(request):
+    return render(request, "parent_home.html")
+
+def create_account(request):
+    return render(request, "createAccount.html")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -71,4 +80,6 @@ urlpatterns = [
     path('create_account/', create_account),
     path('login_or_create/', login_or_create),
     path('', index),
+    path('parent/', parent_view),
+    path('programs_outdated/', programs_outdated),
 ]

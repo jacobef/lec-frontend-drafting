@@ -1,13 +1,25 @@
 :root {
-    --background-color: #f8f8f8;
+    --background-color: #F0F0F0;
     --pimary-color: #0060A6;
     --secondary-color: #AB2B6E;
     --hyperlink: #4E87DD;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #adadad;
+    outline: 1px solid #adadad;
+    border-radius: 0 0 15px 15px;
+}
+
 *{
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 body {

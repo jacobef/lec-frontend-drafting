@@ -21,6 +21,9 @@ def index(request):
     return render(request, "index.html")
 
 def programs(request):
+    return render(request, "view_programs.html")
+
+def admin_programs(request):
     return render(request, "programs.html")
 
 def programs_outdated(request):
@@ -79,6 +82,7 @@ urlpatterns = [
     path('children/', children),
     path('create_account/', create_account),
     path('login_or_create/', login_or_create),
+    path('admin_programs/', admin_programs),
     path('', index),
     path('parent/', parent_view),
     path('programs_outdated/', programs_outdated),

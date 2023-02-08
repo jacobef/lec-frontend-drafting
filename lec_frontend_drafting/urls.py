@@ -20,14 +20,11 @@ from django.urls import path
 def index(request):
     return render(request, "index.html")
 
-def programs(request):
-    return render(request, "view_programs.html")
+def parent_programs(request):
+    return render(request, "parent_programs.html")
 
 def admin_programs(request):
-    return render(request, "programs.html")
-
-def programs_outdated(request):
-    return render(request, "programs_possibly_outdated.html")
+    return render(request, "admin_programs.html")
 
 def students(request):
     return render(request, "student_roster.html")
@@ -71,7 +68,7 @@ def create_account(request):
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', login),
-    path('programs/', programs),
+    path('parent_programs/', parent_programs),
     path('students/', students),
     path('community/', community),
     path('donors/', donors),
@@ -85,5 +82,4 @@ urlpatterns = [
     path('admin_programs/', admin_programs),
     path('', index),
     path('parent/', parent_view),
-    path('programs_outdated/', programs_outdated),
 ]

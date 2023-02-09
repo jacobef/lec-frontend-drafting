@@ -53,9 +53,6 @@ def children(request):
 def login(request):
     return render(request, "login.html")
 
-def login2(request):
-    return render(request, "login2.html")
-
 def login_or_create(request):
     return render(request, "login_or_create.html")
 
@@ -64,6 +61,12 @@ def parent_view(request):
 
 def create_account(request):
     return render(request, "createAccount.html")
+
+def standard_parent(request):
+    return render(request, "standard_parent.html")
+
+def edit_profile(request):
+    return render(request, "edit_profile.html")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -82,4 +85,6 @@ urlpatterns = [
     path('admin_programs/', admin_programs),
     path('', index),
     path('parent/', parent_view),
+    path('standard_parent/', standard_parent),
+    path('edit_profile/', edit_profile),
 ]

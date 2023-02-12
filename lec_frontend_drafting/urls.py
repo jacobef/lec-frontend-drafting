@@ -50,6 +50,9 @@ def announcements(request):
 def children(request):
     return render(request, "children.html")
 
+def add_child(request):
+    return render(request, "add_child.html")
+
 def login(request):
     return render(request, "login.html")
 
@@ -80,6 +83,7 @@ urlpatterns = [
     path('calender/', calender),
     path('announcements/', announcements),
     path('children/', children),
+    path('children/add_child/', add_child),
     path('create_account/', create_account),
     path('login_or_create/', login_or_create),
     path('admin_programs/', admin_programs),

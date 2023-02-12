@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="relative flex w-screen h-screen max-w-screen flex-col"> 
+        <div class="relative flex p-10 flex-col space-y-5">
+            <h1 class="relative flex text-3xl pb-5 font-semibold">
+                Add Child
+            </h1>
+            <form class="relative space-y-5 pb-12 flex-col overflow-y-auto">
+                <div class="relative flex space-y-2 flex-col">
+                    <h1 class="relative flex text-l">
+                        First Name
+                    </h1>
+                    <input class="relative flex border-[1px] rounded-xl border-gray-300 h-12 w-72 p-3" placeholder="First Name"/>
+                </div>
+                <div class="relative flex space-y-2 flex-col">
+                    <h1 class="relative flex text-l">
+                        Last Name
+                    </h1>
+                    <input class="relative flex border-[1px] rounded-xl border-gray-300 h-12 w-72 p-3" placeholder="Last Name"/>
+                </div>
+                <div class="relative flex space-y-2 flex-col">
+                    <h1 class="relative flex text-l">
+                        Age
+                    </h1>
+                    <input class="relative flex border-[1px] rounded-xl border-gray-300 h-12 w-12 items-center justify-center overflow-visible w p-3" maxlength="2" placeholder="--"/>
+                </div>
+                <div class="relative flex space-y-2 flex-col">
+                    <h1 class="relative flex text-l">
+                        Grade
+                    </h1>
+                    <input class="relative flex border-[1px] rounded-xl border-gray-300 h-12 w-12 items-center justify-center overflow-visible w p-3" maxlength="2" placeholder="--"/>
+                </div>
+                <div class="relative flex space-y-2 flex-col">
+                    <h1 class="relative flex text-l">
+                        Allergies
+                    </h1>
+                    <textarea class="relative flex border-[1px] rounded-xl border-gray-300 h-52 w-96 items-center justify-center overflow-visible w p-3" placeholder="i.e. Peanuts, bees, etc."></textarea>
+                </div>
+                <button class="relative flex h-12 w-52 text-white font-semibold text-l bg-sky-400 hover:bg-sky-500 rounded-xl justify-center items-center">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+{% endblock content %}

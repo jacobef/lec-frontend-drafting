@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %} <!-- Lets you add CSS -->
+{% block content %}
+<div class="bg-[#F0F0F0] flex justify-center min-h-screen">
+    {% load static %}
+    <!--need to insert nav bar here-->
+    <div class="mt-[5vh] flex flex-col items-center">
+        <img src="{% static "LEC_logo.png" %}" class="w-[30vw]">
+
+        <div class="bg-white w-full px-[10%] pt-[10%] pb-[5%] rounded-2xl">
+            <p class="text-3xl font-medium text-center">Create Account</p>
+
+            <label for="email" class="form-label inline-block mb-2 text-gray-700"></label>
+            <input type="text" class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700bg-white bg-clip-padding
+                border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                id="exampleFormControlInput1" placeholder="Email"/>
+
+            <label for="password" class="form-label inline-block mb-2 text-gray-700"></label>
+            <input type="text" class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700bg-white bg-clip-padding
+                border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                id="exampleFormControlInput1" placeholder="Password"/>
+
+            <label for="confirm_password" class="form-label inline-block mb-2 text-gray-700"></label>
+            <input type="text" class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700bg-white bg-clip-padding
+                border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                id="exampleFormControlInput1" placeholder="Confirm Password"/>
+
+            <button class="form-control block w-full bg-blue-500 py-1.5 hover:bg-blue-700 text-white font-bold bg-clip-padding py-3 px-4 border focus:border-blue-600 rounded">Sign Up</button>
+
+
+            <div class="text-center mt-8 cursor-pointer">
+                <p class="text-[#4E87DD] text-lg">Need help? Click here to contact us.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</html>
+{% endblock content %}

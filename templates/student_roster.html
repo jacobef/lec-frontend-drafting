@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block title %}Example Page{% endblock %}
+{% block content %}
+
+
+<a href="#" class=" rounded-md border border-gray-200 bg-[#F3F3F3] h-full">
+
+{#this is the header#}
+
+   <div class = "group mb-2  rounded-md  bg-[#E1E1E1] hover:bg-[#cacaca] flex justify-between divide-x-2 divide-black h-16">
+
+
+
+        <div class="flex-1 w-fit pl-3">
+            Last Name
+          </div>
+          <div class="flex-1 w-fit pl-3">
+            First Name
+          </div>
+          <div class="flex-1 w-fit pl-3">
+            Age
+          </div>
+       <div class="flex-1 w-fit pl-3">
+            Grade
+          </div>
+       <div class="flex-1 w-fit pl-3">
+            Allergies
+          </div>
+       <div class="flex-1 w-fit pl-3">
+            Emergency Phone Number
+          </div>
+
+
+
+
+{#                    <p class="mt-2 text-2xl text-black">child </p>#}
+   </div>
+
+
+    <div class = "h-16">
+
+
+    </div>
+{#These are the elements of the roster#}
+            <div class = "p-2">
+                <div class = "group mb-2 p-2 rounded-md  bg-[#E1E1E1] hover:bg-[#cacaca] h-16">
+
+                    <p class="mt-2 text-2xl text-black">student 1</p>
+                </div>
+
+
+                <div class = "mb-2 p-2 rounded-md  bg-[#E1E1E1] hover:bg-[#cacaca] h-16">
+
+                    <p class="mt-2 text-2xl text-black">student 2</p>
+                </div>
+
+            </div>
+        </a>
+
+{% endblock %}

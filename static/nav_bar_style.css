@@ -6,15 +6,6 @@
   --selected: #5593f0;
 }
 
-*{
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  background-color: var(--background-color);
-}
-
 ul {
   list-style-type: none;
   margin:0;
@@ -56,4 +47,43 @@ li a:active{
 
 button{
   background-color: gray;
+}
+
+#notif-btn{
+  position:absolute;
+  padding: 0;
+  margin: 0;
+  right: 195px;
+  top: 2px;
+}
+
+#notif-body{
+  top: 55px;
+  right: 10px;
+  width: 400px;
+  max-height: 400px;
+  position:absolute;
+  overflow-y: auto;
+  background-color: var(--background-color);
+  border-radius: 0 0 15px 15px;
+  box-shadow: -10px 10px 35px rgba(0,0,0,0.125), 10px 10px 35px rgba(0,0,0,0.125); 
+} 
+
+.notif-element{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin-bottom: 5px;
+  height: 100px;
+  user-select: none;
+}
+
+.notif-element:hover{
+  background-color: #e2e2e2;
+}
+
+.notif-element:active{
+  background-color: #dbdbdb;
 }

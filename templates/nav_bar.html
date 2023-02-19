@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>NavBar</title>
-    <link rel="stylesheet" type="text/css" href="/static/nav_bar_style.css">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'nav_bar_style.css' %}">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -11,7 +12,7 @@
         <!-- one nav bar but depending on what user you are you will see different links -->
         <!-- links will determine who sees what -->
         <!-- admin view -->
-        <li class="admin-item"><a href="/programs">Programs</a></li>
+        <li class="admin-item"><a href="/admin_programs">Programs</a></li>
         <li class="admin-item"><a href="/students">Students</a></li>
         <li class="admin-item"><a href="/community">Community Contacts</a></li>
         <li class="admin-item"><a href="/donors">Donors</a></li>
@@ -22,9 +23,17 @@
         <li class="parent-item"><a href="/calender">Calender</a></li>
         <li class="parent-item"><a href="/announcements">Announcements</a></li>
         <li class="parent-item"><a href="/children">Manage Children</a></li>
-        <li class="parent-item"><a href="/programs">Programs</a></li> <!-- this link may be the only one shared by admin and parents -->
+        <li class="parent-item"><a href="/parent_programs">Programs</a></li> 
 
-        <button type="button" id="switch-perm" class="inline-block px-6 py-2.5 bg-gray-800 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out">Change user</a>
+        <button type="button" id="switch-perm" class="inline-block px-6 py-2.5 bg-gray-800 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out">Change user</button> 
+
+        <li id="login-btn"><a href="/login">Login</a></li>
+
+        <a id="notif-btn">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cat" class="w-10 h-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="currentColor" d="M290.59 192c-20.18 0-106.82 1.98-162.59 85.95V192c0-52.94-43.06-96-96-96-17.67 0-32 14.33-32 32s14.33 32 32 32c17.64 0 32 14.36 32 32v256c0 35.3 28.7 64 64 64h176c8.84 0 16-7.16 16-16v-16c0-17.67-14.33-32-32-32h-32l128-96v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V289.86c-10.29 2.67-20.89 4.54-32 4.54-61.81 0-113.52-44.05-125.41-102.4zM448 96h-64l-64-64v134.4c0 53.02 42.98 96 96 96s96-42.98 96-96V32l-64 64zm-72 80c-8.84 0-16-7.16-16-16s7.16-16 16-16 16 7.16 16 16-7.16 16-16 16zm80 0c-8.84 0-16-7.16-16-16s7.16-16 16-16 16 7.16 16 16-7.16 16-16 16z"></path>
+        </a>
+        {% include "notifications.html" %}
     </ul>
     <script type="text/javascript" src="/static/nav_bar.js"></script>
 </body>

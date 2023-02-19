@@ -20,11 +20,14 @@ from django.urls import path
 def index(request):
     return render(request, "index.html")
 
-def programs(request):
-    return render(request, "programs.html")
+def parent_programs(request):
+    return render(request, "parent_programs.html")
+
+def admin_programs(request):
+    return render(request, "admin_programs.html")
 
 def students(request):
-    return render(request, "students.html")
+    return render(request, "student_roster.html")
 
 def community(request):
     return render(request, "community.html")
@@ -47,19 +50,31 @@ def announcements(request):
 def children(request):
     return render(request, "children.html")
 
+def add_child(request):
+    return render(request, "add_child.html")
+
 def login(request):
     return render(request, "login.html")
-
-def create_account(request):
-    return render(request, "create_account.html")
 
 def login_or_create(request):
     return render(request, "login_or_create.html")
 
+def parent_view(request):
+    return render(request, "parent_home.html")
+
+def create_account(request):
+    return render(request, "createAccount.html")
+
+def standard_parent(request):
+    return render(request, "standard_parent.html")
+
+def edit_profile(request):
+    return render(request, "edit_profile.html")
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', login),
-    path('programs/', programs),
+    path('parent_programs/', parent_programs),
     path('students/', students),
     path('community/', community),
     path('donors/', donors),
@@ -68,7 +83,12 @@ urlpatterns = [
     path('calender/', calender),
     path('announcements/', announcements),
     path('children/', children),
+    path('children/add_child/', add_child),
     path('create_account/', create_account),
     path('login_or_create/', login_or_create),
+    path('admin_programs/', admin_programs),
     path('', index),
+    path('parent/', parent_view),
+    path('standard_parent/', standard_parent),
+    path('edit_profile/', edit_profile),
 ]

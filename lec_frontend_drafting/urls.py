@@ -20,8 +20,11 @@ from django.urls import path
 def index(request):
     return render(request, "index.html")
 
-def parent_programs(request):
-    return render(request, "parent_programs.html")
+def programs(request):
+    return render(request, 'programs.html')
+
+def view_program(request):
+    return render(request, "view_program.html")
 
 def admin_programs(request):
     return render(request, "admin_programs.html")
@@ -77,7 +80,8 @@ def edit_profile(request):
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', login),
-    path('parent_programs/', parent_programs),
+    path('programs/', programs),
+    path('programs/view_program/', view_program),
     path('students/', students),
     path('community/', community),
     path('donors/', donors),
@@ -90,7 +94,7 @@ urlpatterns = [
     path('children/view_child/', view_child),
     path('create_account/', create_account),
     path('login_or_create/', login_or_create),
-    path('admin_programs/', admin_programs),
+    path('programs/admin_programs/', admin_programs),
     path('', index),
     path('parent/', parent_view),
     path('standard_parent/', standard_parent),

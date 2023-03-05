@@ -1,43 +1,74 @@
 {% extends "base.html" %}
 {% load static %}
+{#{% block extrahead %}#}
+{#<link rel="stylesheet" href="{% static "login.css"%}">#}
+{#{% endblock %}#}
 
 {% block content %}
-<div class="bg-[#F0F0F0] flex justify-center min-h-screen">
-
-<<<<<<< HEAD
+{#<div class="bg-[#F0F0F0] flex justify-center min-h-screen">#}
+<link rel="stylesheet" href="{% static "login.css"%}">
+{#<<<<<<< HEAD#}
 <body>
-<a class="lec-logo"><img src="https://blueprintboulder.org/nonprofit_logos/lafayette_logo.png"></a>
-    <div class="login-wrapper">
-        <button class="button button1">Log In</button>
-        <button class="button button2">Create Account</button>
-        <a href="https://www.lafayetteempowerment.org/contact/">Need help? Click here to contact us.</a>
+    <div class="center">
+        <div class="back">
+                <a href="#">< Back></a>
+        </div>
+        <h1>Login</h1>
+        <form method="post">
+            <div class="txt_field">
+                <input type="text" required>
+                <label>Username</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <div class="pass">Forgot Password?</div>
+            <input type="submit" value="Login">
+            <div class="signup_link">
+                Not a member? <a href="#">Signup</a>
+            </div>
+        </form>
     </div>
 </body>
-
 {% endblock content %}
-=======
-    <div class="mt-[5vh] flex flex-col items-center">
-        <img src="{% static "LEC_logo.png" %}" class="w-[30vw]">
 
-        <div class="bg-white w-full px-[10%] pt-[10%] pb-[5%] rounded-2xl">
 
-            <div class="py-4 bg-[#0060A6] text-white text-center rounded-2xl cursor-pointer hover:scale-110 hover:opacity-90 transition-all duration-100 ease-out">
-                <h2 class="text-3xl">Parent Log In</h2>
-            </div>
-            <div class="mt-8 py-4 bg-[#AB2B6E] text-white text-center rounded-2xl cursor-pointer hover:scale-110 hover:opacity-90 transition-all duration-100 ease-out">
-                <h2 class="text-3xl">Admin Log In</h2>
-            </div>
+{#<body>#}
+{#<div class="center">#}
+{#<div class="lec-logo"><img src="https://blueprintboulder.org/nonprofit_logos/lafayette_logo.png"></div>#}
+{#    <div class="login-wrapper">#}
+{#        <button class="button button1">Log In</button>#}
+{#        <button class="button button2">Create Account</button>#}
+{#        <a href="https://www.lafayetteempowerment.org/contact/">Need help? Click here to contact us.</a>#}
+{#    </div>#}
+{#</div>#}
+{#</body>#}
 
-            <div class="mt-28 py-4 bg-[#287FBE] text-white text-center rounded-2xl cursor-pointer hover:scale-110 hover:opacity-90 transition-all duration-100 ease-out">
-                <h2 class="text-3xl">Create Account</h2>
-            </div>
-
-            <div class="text-center mt-8 cursor-pointer">
-                <p class="text-[#4E87DD] text-lg">Need help? Click here to contact us.</p>
-            </div>
-        </div>
-    </div>
-</div>
-</html>
-{% endblock content %}
->>>>>>> 7cda8335a330153e70c16c58bf1d21e2e747e94e
+{#=======#}
+{#    <div class="mt-[5vh] flex flex-col items-center">#}
+{#        <img src="{% static "LEC_logo.png" %}" class="w-[30vw]">#}
+{##}
+{#        <div class="bg-white w-full px-[10%] pt-[10%] pb-[5%] rounded-2xl">#}
+{##}
+{#            <div class="py-4 bg-[#0060A6] text-white text-center rounded-2xl cursor-pointer hover:scale-110 hover:opacity-90 transition-all duration-100 ease-out">#}
+{#                <h2 class="text-3xl">Parent Log In</h2>#}
+{#            </div>#}
+{#            <div class="mt-8 py-4 bg-[#AB2B6E] text-white text-center rounded-2xl cursor-pointer hover:scale-110 hover:opacity-90 transition-all duration-100 ease-out">#}
+{#                <h2 class="text-3xl">Admin Log In</h2>#}
+{#            </div>#}
+{##}
+{#            <div class="mt-28 py-4 bg-[#287FBE] text-white text-center rounded-2xl cursor-pointer hover:scale-110 hover:opacity-90 transition-all duration-100 ease-out">#}
+{#                <h2 class="text-3xl">Create Account</h2>#}
+{#            </div>#}
+{##}
+{#            <div class="text-center mt-8 cursor-pointer">#}
+{#                <p class="text-[#4E87DD] text-lg">Need help? Click here to contact us.</p>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+{#</html>#}
+{##}
+{#{% endblock content %}#}
+{#>>>>>>> 7cda8335a330153e70c16c58bf1d21e2e747e94e#}

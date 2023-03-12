@@ -6,10 +6,10 @@
 
 
 
-<div class="h-screen pb-6">
+<div class="h-screen">
 
 
-    <div class="flex flex-row justify-evenly  h-full">
+    <div class="flex flex-row justify-evenly h-full ">
   <!-- ... -->
 
 
@@ -17,26 +17,53 @@
 
 
              <div class = "h-48">
-                 <p class="text-6xl text-black">Welcome back</p>
-                 <p class="text-6xl text-black">user!</p>
+                 <p class="font-semibold text-6xl text-black mt-10">Welcome back</p>
+                 <p class="font-semibold text-6xl text-black">User!</p>
              </div>
 
             
             <table class="relative mt-5 flex rounded-lg h-[75%] w-full bg-gray-200 flex-col items-center space-y-3">
                 <thead class="relative rounded-t-lg flex flex-row bg-[#0066B0] h-16 text-white w-full items-center pr-20">
-                    <tr class="flex-row relative flex items-center justify-around w-full space-x-5 whitespace-nowrap">
-                        <th class="relative flex font-normal text-2xl">Action Needed</th>
+                    <tr class="flex-row relative flex w-full space-x-5 whitespace-nowrap">
+                        <th class="relative flex font-normal text-2xl ml-4">Action Needed</th>
                         
                     </tr>
                 </thead>
                 <tbody class="relative flex w-full flex-col items-center">
-                    <tr class="relative flex w-[97%] flex-row items-center justify-around space-x-10 whitespace-nowrap h-16 rounded-3xl bg-gray-300">
-                        <td class="relative flex">
-                            Action
+                    <tr class="relative w-[97%] items-centerspace-x-10 whitespace-nowrap h-16 rounded-lg bg-gray-300 mb-3 cursor-pointer">
+                        <td class="flex justify-between items-center h-full">
+                            <div class="flex flex-col justify-center ml-4">
+                                <h2 class="text-sm">John</h2>
+                                <h4 class="text-xl">Update Medical Information</h4>
+                            </div>
+                            <i class="mr-4">></i>
                         </td>
                         
                      
                     </tr>
+                    <tr class="relative w-[97%] items-centerspace-x-10 whitespace-nowrap h-16 rounded-lg bg-gray-300 mb-3 cursor-pointer">
+                        <td class="flex justify-between items-center h-full">
+                            <div class="flex flex-col justify-center ml-4">
+                                <h2 class="text-sm">Andrew</h2>
+                                <h4 class="text-xl">Update Medical Information</h4>
+                            </div>
+                            <i class="mr-4">></i>
+                        </td>
+                        
+                     
+                    </tr>
+                    <tr class="relative w-[97%] items-centerspace-x-10 whitespace-nowrap h-16 rounded-lg bg-gray-300 mb-3 cursor-pointer">
+                        <td class="flex justify-between items-center h-full">
+                            <div class="flex flex-col justify-center ml-4">
+                                <h2 class="text-sm">Cody</h2>
+                                <h4 class="text-xl">Update Medical Information</h4>
+                            </div>
+                            <i class="mr-4">></i>
+                        </td>
+                        
+                     
+                    </tr>
+                    
                 </tbody>
             </table>
 
@@ -47,13 +74,15 @@
 
         <div class="flex flex-col min-w-[50%]  h-full">
 
-            <div class = "flex flex-col-reverse h-48">
-                 <div class = "p-2 mb-4 rounded-md  border-2 border-gray-400 bg-[#F3F3F3] hover:bg-[#cacaca] h-16">
+            <div class = "flex flex-col-reverse h-48 cursor-pointer">
+                 <div class = "mb-4 rounded-lg border-2 border-gray-500 hover:bg-[#cacaca] h-16 flex items-center justify-between bg-[#e5e7eb]">
 
 
-                    <span class = "text-2xl text-black h-fit mt-3 ">Announcements</span>
-
-
+                    <span class = "text-2xl text-black h-fit ml-4">Announcements</span>
+                    <div class="text-2xl flex items-center mr-4 justify-center">
+                        <h2 class ="mr-2">12 New</h2>
+                        <i class="text-sky-400">-></i>
+                    </div>
                 </div>
              </div>
 
@@ -61,19 +90,34 @@
 
         <table class="relative mt-5 flex rounded-lg h-[75%] w-full bg-gray-200 flex-col items-center space-y-3">
             <thead class="relative rounded-t-lg flex flex-row bg-[#0066B0] h-16 text-white w-full items-center pr-20">
-                <tr class="flex-row relative flex items-center justify-around w-full space-x-5 whitespace-nowrap">
-                    <th class="relative flex font-normal text-2xl">Children</th>
+                <tr class="flex-row relative flex w-full space-x-5 whitespace-nowrap">
+                    <th class="relative flex font-normal text-2xl ml-4">My Children</th>
                     
                 </tr>
             </thead>
             <tbody class="relative flex w-full flex-col items-center">
-                <tr class="relative flex w-[97%] flex-row items-center justify-around space-x-10 whitespace-nowrap h-16 rounded-3xl bg-gray-300">
-                    <td class="relative flex">
-                        Child
+                <tr class="relative w-[97%] items-centerspace-x-10 whitespace-nowrap h-16 rounded-lg bg-gray-300 mb-3 cursor-pointer text-lg">
+                    <td class="flex justify-between items-center h-full">
+                        <h2 class="ml-4 text-2xl">John Smith</h2>
+                        <div class="flex items-center justify-center mr-4">
+                            <i>(Bell)</i>
+                            <i class="ml-8">></i>
+                        </div>
+
                     </td>
-                    <td class="relative flex">
-                        John
+                    
+                 
+                </tr>
+                <tr class="relative w-[97%] items-centerspace-x-10 whitespace-nowrap h-16 rounded-lg bg-gray-300 mb-3 cursor-pointer text-lg">
+                    <td class="flex justify-between items-center h-full">
+                        <h2 class="ml-4 text-2xl">Sarah Smith</h2>
+                        <div class="flex items-center justify-center mr-4">
+                            <i>(Bell)</i>
+                            <i class="ml-8">></i>
+                        </div>
+
                     </td>
+                    
                  
                 </tr>
             </tbody>
@@ -83,15 +127,7 @@
         </div>
 
 
-
-
-
-
-
-
     </div>
-
-
 
 </div>
 

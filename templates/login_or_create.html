@@ -1,39 +1,66 @@
 {% extends "base.html" %}
-{% load static %}
+{% load static %} <!-- Lets you add CSS -->
+{% block content %}
+<div class="bg-[#F0F0F0] flex justify-center min-h-screen">
+    {% load static %}
+    <!--need to insert nav bar here-->
+    <div class="mt-[5vh] flex flex-col items-center">
+        <img src="{% static "LEC_logo.png" %}" class="w-[30vw]">
+
+        <div class="bg-white w-full px-[10%] pt-[10%] pb-[5%] rounded-2xl">
+
+            <form action="/login">
+                <button class="form-control block w-full bg-blue-500 py-1.5 hover:bg-blue-700 text-white font-bold bg-clip-padding py-3 px-4 border focus:border-blue-600 rounded">Log In</button>
+            </form>
+            <form action="/create_account">
+                <button class="form-control block w-full bg-fuchsia-800 py-1.5 hover:bg-fuchsia-900 text-white font-bold bg-clip-padding py-3 px-4 border focus:border-fuchsia-900 rounded">Create Account</button>
+            </form>
+
+            <div class="text-center mt-8 cursor-pointer">
+                <p class="text-[#4E87DD] text-lg">Need help? Click here to contact us.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</html>
+{% endblock content %}
+
+{#{% extends "base.html" %}#}
+{#{% load static %}#}
 {#{% block extrahead %}#}
 {#<link rel="stylesheet" href="{% static "login.css"%}">#}
 {#{% endblock %}#}
-
-{% block content %}
+{##}
+{#{% block content %}#}
 {#<div class="bg-[#F0F0F0] flex justify-center min-h-screen">#}
-<link rel="stylesheet" href="{% static "login.css"%}">
+{#<link rel="stylesheet" href="{% static "login.css"%}">#}
 {#<<<<<<< HEAD#}
-<body>
-    <div class="center">
-        <div class="back">
-                <a href="#">< Back></a>
-        </div>
-        <h1>Login</h1>
-        <form method="post">
-            <div class="txt_field">
-                <input type="text" required>
-                <label>Username</label>
-            </div>
-            <div class="txt_field">
-                <input type="password" required>
-                <label>Password</label>
-            </div>
-            <div class="pass">Forgot Password?</div>
-            <input type="submit" value="Login">
-            <div class="signup_link">
-                Not a member? <a href="#">Signup</a>
-            </div>
-        </form>
-    </div>
-</body>
-{% endblock content %}
-
-
+{#<body>#}
+{#    <div class="center">#}
+{#        <div class="back">#}
+{#                <a href="#">< Back></a>#}
+{#        </div>#}
+{#        <h1>Login</h1>#}
+{#        <form method="post">#}
+{#            <div class="txt_field">#}
+{#                <input type="text" required>#}
+{#                <label>Username</label>#}
+{#            </div>#}
+{#            <div class="txt_field">#}
+{#                <input type="password" required>#}
+{#                <label>Password</label>#}
+{#            </div>#}
+{#            <div class="pass">Forgot Password?</div>#}
+{#            <input type="submit" value="Login">#}
+{#            <div class="signup_link">#}
+{#                Not a member? <a href="#">Signup</a>#}
+{#            </div>#}
+{#        </form>#}
+{#    </div>#}
+{#</body>#}
+{#{% endblock content %}#}
+{##}
+{##}
 {#<body>#}
 {#<div class="center">#}
 {#<div class="lec-logo"><img src="https://blueprintboulder.org/nonprofit_logos/lafayette_logo.png"></div>#}
@@ -44,7 +71,7 @@
 {#    </div>#}
 {#</div>#}
 {#</body>#}
-
+{##}
 {#=======#}
 {#    <div class="mt-[5vh] flex flex-col items-center">#}
 {#        <img src="{% static "LEC_logo.png" %}" class="w-[30vw]">#}

@@ -2,11 +2,7 @@
 {% block title %}Example Page{% endblock %}
 {% block content %}
 
-
-
-
 <div class="h-screen pb-6">
-
 
     <div class="flex flex-row flex justify-evenly  h-full">
   <!-- ... -->
@@ -27,31 +23,31 @@
 
 
 
-        <table class="relative mt-5 flex rounded-lg h-[75%] w-[50%] bg-gray-200 flex-col items-center space-y-3">
+        <table class="relative mt-5 flex h-[80%] w-[50%] bg-gray-200 flex-col items-center space-y-3">
             <thead class="relative rounded-t-lg flex flex-row bg-[#0066B0] h-16 text-white w-full items-center pr-20">
                 <tr class="flex-row relative flex items-center justify-around w-full space-x-5 whitespace-nowrap">
                     <th class="relative flex font-normal text-2xl">Edit Profile</th>
                     
                 </tr>
             </thead>
-            <tbody class="relative flex w-full flex-col items-center">
+            <tbody class="relative flex w-full flex-col items-center space-y-1 my-10">
                
 
 
-                <tr class = "relative flex w-[97%] mt-[2.5%] flex-row flex-row items-center justify-around space-x-10 rounded-3xl" >
+                <tr class = "relative flex w-[97%] mt-[2.5%] flex-row items-center justify-around space-x-10 space-y-5" >
 
                     <td>
 
                     </td>
 
-                    <td class = "w-full rounded-3xl">
+                    <td class = "w-full ">
                         {% comment %} <input type="text" id="large-input" class = "w-[100%]  space-x-10  h-16 rounded-3xl bg-gray-300"> {% endcomment %}
 
 
                         
-                            <div class="mb-6 w-full items-center rounded-3xl">
-                                <label for="large-input" class="block mb-2 text-sm font-medium text-gray-900 ">Name</label>
-                                <input type="text"  value="John Doe" class="w-full p-4 text-gray-900 rounded-3xl bg-gray-50 sm:text-md">
+                            <div class="mb-6 w-full items-center space-y-1">
+                                <label for="large-input" class="block mb-2 text-sm font-medium text-gray-900">Username</label>
+                                <input type="text"  value="sample123" class="w-full p-4 text-gray-900 rounded-3xl bg-gray-50 sm:text-md">
                             </div>
                       
 
@@ -61,42 +57,20 @@
 
 
 
-                <tr class = "relative flex w-[97%] flex-row flex-row items-center justify-around space-x-10 rounded-3xl" >
+                <tr class = "relative flex w-[97%] flex-row flex-row items-center justify-around space-x-10 space-y-5" >
 
                     <td>
 
                     </td>
 
-                    <td class = "w-full rounded-3xl">
+                    <td class = "w-full ">
                         {% comment %} <input type="text" id="large-input" class = "w-[100%]  space-x-10  h-16 rounded-3xl bg-gray-300"> {% endcomment %}
 
 
                         
-                            <div class="mb-6 w-full items-center rounded-3xl">
-                                <label for="large-input" class="block mb-2 text-sm font-medium text-gray-900 ">Home Phone</label>
-                                <input type="text"  value="560-329-3376" class="w-full p-4 text-gray-900 rounded-3xl bg-gray-50 sm:text-md">
-                            </div>
-                      
-
-                    </td>
-                    
-                </tr>
-
-
-                <tr class = "relative flex w-[97%] flex-row flex-row items-center justify-around space-x-10 rounded-3xl" >
-
-                    <td>
-
-                    </td>
-
-                    <td class = "w-full rounded-3xl">
-                        {% comment %} <input type="text" id="large-input" class = "w-[100%]  space-x-10  h-16 rounded-3xl bg-gray-300"> {% endcomment %}
-
-
-                        
-                            <div class="mb-6 w-full items-center rounded-3xl">
+                            <div class="mb-6 w-full items-center ">
                                 <label for="large-input" class="block mb-2 text-sm font-medium text-gray-900 ">Email</label>
-                                <input type="text"  value="lorem@ipsum.io" class="w-full p-4 text-gray-900 rounded-3xl bg-gray-50 sm:text-md">
+                                <input type="text"  value="sample123@gmail.com" class="w-full p-4 text-gray-900 rounded-3xl bg-gray-50 sm:text-md">
                             </div>
                       
 
@@ -104,20 +78,42 @@
                     
                 </tr>
 
-                <tr class = "relative flex w-[97%] flex-row flex-row items-center justify-around space-x-10 rounded-3xl" >
+
+                <tr class = "relative flex w-[97%] flex-row flex-row items-center justify-around space-x-10 space-y-5 rounded-3xl" >
 
                     <td>
 
                     </td>
 
-                    <td class = "w-full rounded-3xl">
+                    <td class = "w-full ">
                         {% comment %} <input type="text" id="large-input" class = "w-[100%]  space-x-10  h-16 rounded-3xl bg-gray-300"> {% endcomment %}
 
 
                         
-                            <div class="mb-6 w-full items-center rounded-3xl">
-                                <label for="large-input" class="block mb-2 text-sm font-medium text-gray-900 ">Cell Phone</label>
-                                <input type="text"  value="560-239-8019" class="w-full p-4 text-gray-900 rounded-3xl bg-gray-50 sm:text-md">
+                            <div class="mb-6 w-full items-center">
+                                <label for="large-input" class="block mb-2 text-sm font-medium text-gray-900 ">Full Name</label>
+                                <input type="text"  value="First Last" class="w-full p-4 text-gray-900 rounded-3xl bg-gray-50 sm:text-md">
+                            </div>
+                      
+
+                    </td>
+                    
+                </tr>
+
+                <tr class = "relative flex w-[97%] flex-row flex-row items-center justify-around space-x-10 space-y-5 rounded-3xl" >
+
+                    <td>
+
+                    </td>
+
+                    <td class = "w-full ">
+                        {% comment %} <input type="text" id="large-input" class = "w-[100%]  space-x-10  h-16 rounded-3xl bg-gray-300"> {% endcomment %}
+
+
+                        
+                            <div class="mb-6 w-full items-center ">
+                                <label for="large-input" class="block mb-2 text-sm font-medium text-gray-900 ">Home Address</label>
+                                <input type="text"  value="123 Home St., Apt #, 12345 City, State" class="w-full p-4 text-gray-900 rounded-3xl bg-gray-50 sm:text-md">
                             </div>
                       
 
@@ -126,30 +122,60 @@
                 </tr>
                 
 
+{#                <tr class = "relative flex w-[97%] flex-row flex-row items-center justify-around space-x-10 space-y-5 rounded-3xl" >#}
 
-                <tr class = "relative flex w-[90%] mt-[2%] flex-row flex-row items-start space-x-10 rounded-3xl" >
-
-                    <td>
-                        <a class="relative flex truncate whitespace-nowrap text-blue-400 cursor-pointer hover:text-blue-500 hover:scale-110 hover:opacity-90 transition-all duration-100 ease-out">Manage Children</a>
+                <tr class = "relative flex w-[80%] mt-[2%] flex-row items-start space-x-10 h-12 items-center justify-center rounded-3xl" >
+{#                    <form action="/children">#}
+{#                        <button class="form-control block w-full bg-blue-500 py-1.5 hover:bg-blue-700 text-white font-bold bg-clip-padding py-3 px-4 border focus:border-blue-600 rounded">Manage Children</button>#}
+{#                        <button class="form-control block relative flex truncate whitespace-nowrap text-blue-400 cursor-pointer hover:text-blue-500 hover:scale-110 hover:opacity-90 transition-all duration-100 ease-out">Manage Children</button>#}
+{#                    </form>#}
+{#                    <td>#}
+{#                        <a class="relative flex truncate whitespace-nowrap text-blue-400 cursor-pointer hover:text-blue-500 hover:scale-110 hover:opacity-90 transition-all duration-100 ease-out">Manage Children</a>#}
+{#                    </td>#}
+                    <td class="relative flex text-2xl h-full w-full text-blue-400 cursor-pointer hover:text-blue-500 hover:scale-110 hover:opacity-90 items-center justify-center">
+{#                        <a href="/children" class="relative flex h-full w-full justify-center items-center">#}
+{#                            Manage Children#}
+{#                        </a>#}
+                        <form action="/children">
+                            <button class="text-white text-mg relative font-semibold flex rounded-2xl h-12 w-48 bg-sky-400 flex-col justify-center items-center cursor-pointer hover:scale-110 hover:opacity-90 transition-all duration-100 ease-out">Manage Children</button>
+                        </form>
                     </td>
 
                     
                 </tr>
 
-                <tr class = "relative flex w-[90%] h-16  flex-row flex-row items-start space-x-10 rounded-3xl" >
+                <tr class = "relative flex w-[97%] flex-row flex-row items-center justify-around space-x-10 space-y-5 rounded-3xl" >
 
                     <td>
-                       
+
+                    </td>
+
+                    <td class = "w-full ">
+                        {% comment %} <input type="text" id="large-input" class = "w-[100%]  space-x-10  h-16 rounded-3xl bg-gray-300"> {% endcomment %}
+
+
+
+                            <div class="mb-6 w-full items-center ">
+                                <label for="large-input" class="block mb-2 text-sm font-medium text-gray-900 ">Account Type</label>
+                                <label for="large-input" class="block mb-2 text-sm text-gray-900 ">Guardian</label>
+                                <button class="text-white text-mg relative font-semibold flex rounded-2xl h-12 w-48 bg-sky-400 flex-col justify-center items-center cursor-pointer hover:scale-110 hover:opacity-90 transition-all duration-100 ease-out">Request Admin Access</button>
+                            </div>
+
+
                     </td>
 
                 </tr>
 
-                <tr class = "relative flex w-[90%] flex-row flex-row items-start space-x-10 rounded-3xl" >
+{#                <tr class = "relative flex w-[90%] flex-row flex-row items-start space-x-10 rounded-3xl my-7" >#}
+                <tr class = "relative flex w-[97%] flex-row flex-row items-center justify-around space-x-10 space-y-5 rounded-3xl" >
+
 
                     <td>
-                        <button class="bg-[#0066B0] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                            Save
-                          </button>
+{#                        <button class="bg-[#0066B0] hover:bg-blue-700 text-white font-bold rounded-3xl rounded">#}
+{#                            Save#}
+{#                          </button>#}
+                        <button class="text-white text-mg relative font-semibold flex rounded-2xl h-12 w-48 bg-[#0066B0] flex-col justify-center items-center cursor-pointer hover:bg-blue-700 hover:scale-110 hover:opacity-90 transition-all duration-100 ease-out">Save</button>
+
                     </td>
 
                 </tr>
@@ -163,21 +189,10 @@
         </div>
 
 
-
-
-
-
-
-
     </div>
 
 
-
 </div>
-
-
-
-
 
 
 {% endblock %}

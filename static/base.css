@@ -1,3 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.select2-dropdown {
+    @apply bg-blue-500 border-black border-spacing-1;
+}
+
+.select2-search {
+    @apply border border-gray-300 rounded;
+}
+
+.select2-results__group {
+    @apply text-lg font-bold text-gray-900;
+}
+
+
+
+.select {
+
+}
+
+.short-text {
+    @apply relative flex border-[1px] rounded-xl border-gray-300 h-12 w-72 p-3
+}
+
+.long-text {
+    @apply border-[1px] rounded-xl border-gray-300 h-52 w-96 items-center justify-center overflow-visible p-3
+}
+
+.select-multiple {
+
+}
+
+.labels {
+
+}
+
+
+
+
+.primary-button {
+
+}
+
+.secondary-button {
+
+}
+
+
+
+
+.primary-color {
+
+}
+
+.secondary-color {
+
+}
+
+.third-color {
+
+}
+
+
+
+.tooltip {
+
+}
+
+
+
+.main-font {
+
+}
+
+
 :root {
     --background-color: #F0F0F0;
     --pimary-color: #0060A6;

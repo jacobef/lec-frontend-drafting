@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+.primary-color {
+    @apply bg-[#0060A6]
+}
+
+.secondary-color {
+    @apply bg-[#AB2B6E]
+}
+
+.third-color {
+    @apply bg-sky-400
+}
+
+
+
 .select2-dropdown {
     @apply bg-blue-500 border-black border-spacing-1;
 }
@@ -38,27 +52,11 @@
 
 
 
-
 .primary-button {
-
+    @apply text-white relative font-semibold flex rounded-2xl h-12 w-48 third-color flex-col justify-center items-center cursor-pointer hover:scale-110 hover:opacity-90 transition-all duration-100 ease-out
 }
 
 .secondary-button {
-
-}
-
-
-
-
-.primary-color {
-
-}
-
-.secondary-color {
-
-}
-
-.third-color {
 
 }
 
@@ -73,6 +71,7 @@
 .main-font {
 
 }
+
 
 
 :root {

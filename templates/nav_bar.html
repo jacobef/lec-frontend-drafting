@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>NavBar</title>
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'nav_bar_style.css' %}">
-    <link rel="stylesheet" type="text/css" href="../static/nav_bar_style.css">
-</head>
-<body>
-    <ul id="nav">
+ <ul id="nav">
         <!-- one nav bar but depending on what user you are you will see different links -->
         <!-- links will determine who sees what -->
         <!-- admin view -->
@@ -36,5 +26,3 @@
         {% include "notifications.html" %}
     </ul>
     <script type="text/javascript" src="/static/nav_bar.js"></script>
-</body>
-</html>

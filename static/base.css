@@ -57,19 +57,19 @@
 }
 
 .secondary-button {
-    @apply text-white relative font-semibold flex rounded-2xl h-12 w-48 third-color flex-col justify-center items-center cursor-pointer hover:scale-110 hover:opacity-90 transition-all duration-100 ease-out
+    @apply text-sky-400 relative font-semibold flex rounded-2xl h-12 w-48 bg-white border border-sky-400 flex-col justify-center items-center cursor-pointer hover:scale-110 hover:opacity-90 transition-all duration-100 ease-out
 }
 
 
 
 .tooltip {
-
+    @apply text-sky-400
 }
 
 
 
 .main-font {
-
+    @apply font-sans
 }
 
 
